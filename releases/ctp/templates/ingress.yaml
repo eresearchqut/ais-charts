@@ -13,8 +13,8 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  {{- if .Values.ingress.ingressClass }}
-  ingressClass: {{ .Values.ingress.ingressClass }}
+  {{- if .Values.ingress.ingressClassName }}
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
   {{- end }}
   {{- if .Values.ingress.tls }}
   tls:
@@ -48,8 +48,8 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  {{- if .Values.ingress.ingressClass }}
-  ingressClass: {{ .Values.ingress.ingressClass }}
+  {{- if .Values.ingress.ingressClassName }}
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
   {{- end }}
   {{- if .Values.ingress.tls }}
   tls:
