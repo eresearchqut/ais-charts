@@ -151,12 +151,12 @@ proxyServer:
   password: ""
 
 volumes:
-  roots:
-    accessMode: ReadWriteMany
-    #existingClaim: ""
-    mountPath: "/vol/roots"
-    #storageClassName: "-"
-    size: 10Gi
+  # FileStorageService:
+  #   accessMode: ReadWriteMany
+  #   #existingClaim: ""
+  #   mountPath: "/vol/FileStorageService"
+  #   #storageClassName: "-"
+  #   size: 10Gi
   # quarantines:
   #   accessMode: ReadWriteMany
   #   #existingClaim: ""

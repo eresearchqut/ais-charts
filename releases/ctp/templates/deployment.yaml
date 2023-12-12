@@ -102,7 +102,9 @@ spec:
           configMap:
             name: {{ include "ctp.fullname" . }}-scripts
         - name: logs
-          emptyDir: {}    
+          emptyDir: {}
+        - name: roots
+          emptyDir: {}
         {{- $context := . -}}
         {{- range $volume, $v := .Values.volumes }}
         - name: {{ $volume }}
